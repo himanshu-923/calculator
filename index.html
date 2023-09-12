@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CALCULATOR</title>
+    <title>RGB Name</title>
     <style>
         .name {
-            font-size: 36px; /* Adjust the font size as needed */
-            animation: colorChange 5s infinite; /* Color-changing animation */
-        }
-
-        @keyframes colorChange {
-            0% { color: rgb(255, 0, 0); } /* Starting color (Red) */
-            25% { color: rgb(0, 255, 0); } /* Transition to Green */
-            50% { color: rgb(0, 0, 255); } /* Transition to Blue */
-            75% { color: rgb(255, 255, 0); } /* Transition to Yellow */
-            100% { color: rgb(255, 0, 255); } /* Transition back to Red */
+            color: rgb(255, 0, 0); /* Replace the RGB values with your desired colors */
         }
     </style>
 </head>
 <body>
-    <h1 class="name">HIMANSHU SINGH</h1>
+    <h1 class="name">HIMANSHU SINGH
+  </h1>
 </body>
 </html>
 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colorful Name</title>
+    <style>
+        .name {
+            animation: colorChange 3s infinite; /* Adjust the duration of the animation as desired */
+        }
+
+        @keyframes colorChange {
+            0% { color: rgb(255, 0, 0); } /* Replace the RGB values with your desired starting color */
+            50% { color: rgb(0, 255, 0); } /* Replace the RGB values with your desired middle color */
+            100% { color: rgb(0, 0, 255); } /* Replace the RGB values with your desired ending color */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="name"></h1>
+</body>
+</html>
 
 
 <!DOCTYPE html>
@@ -37,7 +51,7 @@
          background-color: #f5f5f5;
       }
       .output {
-         text-align: center; /* Corrected the spelling of "center" */
+         text-align: right;
          margin-bottom: 10px;
          padding: 5px;
          border: 1px solid #ccc;
@@ -104,17 +118,9 @@
       }
 
       function calculate() {
-         try {
-            let inputValue = document.getElementById("result").value;
-            let result = eval(inputValue);
-            if (2+2(result)) {
-               document.getElementById("result").value = "NAHI BATAUNGA";
-            } else {
-               document.getElementById("result").value = result;
-            }
-         } catch (error) {
-            document.getElementById("result").value = "NAHI BATAUNGA";
-         }
+         let inputValue = document.getElementById("result").value;
+         let result = eval(inputValue);
+         document.getElementById("result").value = result;
       }
    </script>
 </body>
